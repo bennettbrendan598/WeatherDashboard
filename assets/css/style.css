@@ -1,0 +1,21 @@
+* {
+    font-family: 'Dosis', sans-serif;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #4ddbff;
+    color: black;
+    font-size: 30px;
+}
+
+.card {
+    background-color: #4ddbff;
+    padding: 20px;
+}
+
+.search-card {
+    padding: 10px;
+}
+

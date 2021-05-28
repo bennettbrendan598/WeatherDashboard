@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic.min.css" integrity="sha512-LeCmts7kEi09nKc+DwGJqDV+dNQi/W8/qb0oUSsBLzTYiBwxj0KBlAow2//jV7jwEHwSCPShRN2+IWwWcn1x7Q==" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>WeatherDashboard | Home</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <h1>WeatherDashboard</h1>
+        </div>
+
+        <main class="row p-3 p-5">
+            <div
+                class="col-3">
+
+                <!-- Card containing Search Bar -->
+                <div class="card search-card">
+                    <h1 class="card-header text-dark">Search for your City:</h1>
+                    <form class="form-inline m-4" id="city-form">
+                            <input type="text" class="form-input input-group-text" id="city-input" name="city">
+                            <br>
+                            <button type="submit" class="btn btn-primary" id="search-btn">
+                                <span class="oi p-4" data-glyph="magnifying-glass"></span>
+                            </button>
+                    </form>
+                </div>
+                <br>
+
+                <!-- Card containing Search History -->
+                <div class="card history-card">
+                    <h2 class="card-header text-dark">Search History:</h2>
+                    <ul class="search-history mx-2 mt-3 btn-group-vertical"></ul>
+                </div>
+            </div>
+
+            <!-- Card for today's forecast -->
+            <div class="col-9">
+
+                <div class="card m-2 today-forecast">
+                    <div class="card-header text-dark today-forecast"></div>
+                </div>
+
+                <!-- Card for 5 day Forecast -->
+                <div class="card m-2 five-day-card text-dark">
+                    <h1 class="card-header text-dark">Your Five Day Forecast:</h1>
+                    <div class="forecast row text-dark"></div>
+                </div>
+            </div>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <script src="../js/script.js"></script>
+    </body>
+</html>
